@@ -1,0 +1,151 @@
+/* ==========================================================================
+   XESTUS BIZCRAFT - HIGH-RES PRINT & PDF STYLES
+   Pixel-perfect A4 printing rules, zero UI bleed, pure paper fidelity.
+   ========================================================================== */
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 10mm 12mm;
+  }
+
+  /* Reset body and hide all web application chrome */
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+    overflow: visible !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body::before,
+  .site-header,
+  .nav-tabs-wrapper,
+  .editor-pane,
+  .preview-toolbar,
+  .vault-stats-bar,
+  .vault-controls-row,
+  .pan-warning-banner,
+  .editorial-guide-section,
+  .faq-section,
+  .site-footer,
+  .skip-link,
+  #toast-container,
+  .modal-overlay,
+  .btn,
+  .btn-icon,
+  .no-print {
+    display: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Only display the active tab pane during print */
+  .tab-content-pane {
+    display: none !important;
+  }
+  .tab-content-pane.active,
+  .tab-content-pane[style*="display: block"] {
+    display: block !important;
+  }
+
+  .app-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
+  .studio-layout,
+  .rent-layout,
+  .slip-layout,
+  .upi-studio-layout {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+  }
+
+  .preview-pane {
+    position: static !important;
+    display: block !important;
+  }
+
+  .paper-scroll-wrapper {
+    max-height: none !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    display: block !important;
+  }
+
+  /* Target documents */
+  .document-paper,
+  .payslip-paper,
+  .rent-receipt-sheet,
+  .voucher-paper,
+  .standee-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  /* Force display of standee if in standee print mode or printing from UPI tab */
+  body.print-standee-mode .standee-container,
+  #tab-pane-upi[style*="display: block"] .standee-container {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  body.print-standee-mode .upi-preview-card,
+  #tab-pane-upi[style*="display: block"] .upi-preview-card {
+    display: none !important;
+  }
+
+  /* Multiple receipts in 12-month batch mode */
+  .rent-receipt-sheet {
+    page-break-after: always;
+    break-after: page;
+    margin-bottom: 20mm !important;
+    padding-bottom: 15mm !important;
+    border-bottom: 1px dashed #cbd5e1 !important;
+  }
+
+  .rent-receipt-sheet:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  /* Ensure colors and table borders print clearly */
+  table {
+    border-collapse: collapse !important;
+  }
+
+  th, td {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .doc-items-table th,
+  .payslip-calc-table th {
+    background-color: #f1f5f9 !important;
+    color: #0f172a !important;
+  }
+
+  .revenue-stamp-inner {
+    border: 1px solid #1e40af !important;
+    background-color: #eff6ff !important;
+  }
+}

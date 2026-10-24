@@ -1,0 +1,231 @@
+/* ==========================================================================
+   XESTUS BIZCRAFT - UPI QR CODE STUDIO STYLES
+   Dynamic NPCI UPI QR Generator, Standee Counter Display & Exporter.
+   ========================================================================== */
+
+.upi-studio-layout {
+  display: grid;
+  grid-template-columns: minmax(440px, 1fr) minmax(440px, 1fr);
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+@media (max-width: 980px) {
+  .upi-studio-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Preset Amount Pills */
+.preset-amount-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.preset-chip {
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  background: var(--bg-surface-2);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.preset-chip:hover {
+  background: var(--bg-surface-3);
+  color: var(--text-primary);
+  border-color: var(--primary-500);
+}
+
+/* Color Swatches */
+.color-swatches-grid {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.color-swatch-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.color-swatch-btn:hover {
+  transform: scale(1.15);
+}
+
+.color-swatch-btn.active {
+  border-color: #ffffff;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
+}
+
+/* --------------------------------------------------------------------------
+   UPI QR PREVIEW CARD
+   -------------------------------------------------------------------------- */
+.upi-preview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  padding: var(--space-xl);
+  background: var(--bg-surface-1);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  text-align: center;
+}
+
+.qr-canvas-wrapper {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: transform var(--transition-normal);
+}
+
+.qr-canvas-wrapper:hover {
+  transform: scale(1.02);
+}
+
+#upi-qr-canvas {
+  width: 250px;
+  height: 250px;
+  display: block;
+}
+
+.upi-center-logo-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.upi-center-logo-overlay img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.upi-payee-display {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.upi-payee-name {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.upi-payee-vpa {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--primary-400);
+  background: rgba(99, 102, 241, 0.12);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.upi-amount-pill {
+  font-size: 1.6rem;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--emerald-500);
+}
+
+/* --------------------------------------------------------------------------
+   STANDEE COUNTER DISPLAY (A4 / A5 Print Tent Card)
+   -------------------------------------------------------------------------- */
+.standee-container {
+  display: none;
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  color: #0f172a;
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+  padding: 36px 32px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.standee-header {
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+}
+
+.standee-brand-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.standee-sub {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+.standee-qr-frame {
+  background: #f8fafc;
+  border: 2px dashed #cbd5e1;
+  border-radius: 16px;
+  padding: 24px;
+  display: inline-block;
+  margin: 0 auto 20px;
+}
+
+.standee-cta {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.standee-apps-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.standee-app-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #64748b;
+  background: #f1f5f9;
+  padding: 4px 10px;
+  border-radius: 6px;
+}

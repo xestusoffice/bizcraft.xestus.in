@@ -1,0 +1,50 @@
+{
+  "name": "Xestus BizCraft - 100% Private Business Studio",
+  "short_name": "BizCraft",
+  "description": "Ultra-premium, 100% client-side GST invoices, dynamic UPI QR codes, HRA rent receipts, and payslip studio. Zero server processing.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#090D16",
+  "theme_color": "#6366F1",
+  "categories": ["business", "finance", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "GST Invoice Generator",
+      "short_name": "Invoice",
+      "description": "Generate GST and Non-GST professional invoices and quotations",
+      "url": "./index.html#invoice",
+      "icons": [{ "src": "favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "UPI QR Code Studio",
+      "short_name": "UPI QR",
+      "description": "Generate dynamic branded UPI payment QR codes and counter standees",
+      "url": "./index.html#upi",
+      "icons": [{ "src": "favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "HRA Rent Receipts",
+      "short_name": "Rent Receipt",
+      "description": "Generate monthly & 12-month annual rent receipts with revenue stamp",
+      "url": "./index.html#rent",
+      "icons": [{ "src": "favicon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "Salary Slip & Payslip",
+      "short_name": "Salary Slip",
+      "description": "Generate corporate employee salary slips and payment vouchers",
+      "url": "./index.html#salary",
+      "icons": [{ "src": "favicon.svg", "sizes": "any" }]
+    }
+  ]
+}

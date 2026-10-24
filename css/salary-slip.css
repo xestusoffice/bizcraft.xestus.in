@@ -1,0 +1,225 @@
+/* ==========================================================================
+   XESTUS BIZCRAFT - SALARY SLIP & PAYMENT VOUCHER STYLES
+   Earnings & Deductions dual-column grid, Net Pay highlight, Voucher stubs.
+   ========================================================================== */
+
+.slip-layout {
+  display: grid;
+  grid-template-columns: minmax(440px, 1fr) minmax(540px, 1fr);
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+@media (max-width: 1080px) {
+  .slip-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Payslip Document Paper */
+.payslip-paper {
+  background: #ffffff;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 36px 40px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+  font-family: var(--font-sans);
+}
+
+.payslip-header {
+  text-align: center;
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.payslip-company-name {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.payslip-company-addr {
+  font-size: 0.82rem;
+  color: #475569;
+  margin-top: 4px;
+}
+
+.payslip-badge-title {
+  display: inline-block;
+  margin-top: 10px;
+  background: #0f172a;
+  color: #ffffff;
+  padding: 4px 16px;
+  border-radius: 4px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* Employee Details Grid */
+.payslip-emp-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px 24px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 14px 18px;
+  margin-bottom: 20px;
+  font-size: 0.84rem;
+}
+
+.emp-info-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #e2e8f0;
+  padding-bottom: 3px;
+}
+
+.emp-info-row .lbl {
+  color: #64748b;
+  font-weight: 600;
+}
+
+.emp-info-row .val {
+  color: #0f172a;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+/* Dual Column Earnings & Deductions Table */
+.payslip-calc-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid #cbd5e1;
+}
+
+.payslip-calc-table th {
+  background: #0f172a;
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border-right: 1px solid #334155;
+}
+
+.payslip-calc-table td {
+  padding: 8px 12px;
+  font-size: 0.86rem;
+  border-bottom: 1px solid #e2e8f0;
+  border-right: 1px solid #e2e8f0;
+  color: #1e293b;
+}
+
+.payslip-calc-table td.num {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+.payslip-calc-table tr.subtotal-row td {
+  background: #f1f5f9;
+  font-weight: 700;
+  color: #0f172a;
+  border-top: 2px solid #cbd5e1;
+}
+
+/* Net Salary Highlight Box */
+.payslip-net-box {
+  background: #ecfdf5;
+  border: 2px solid #10b981;
+  border-radius: 8px;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.net-lbl {
+  font-size: 0.86rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #065f46;
+}
+
+.net-val {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #065f46;
+  font-family: var(--font-mono);
+}
+
+.payslip-words {
+  font-size: 0.82rem;
+  color: #475569;
+  background: #f8fafc;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------------------------------
+   PAYMENT VOUCHER STYLES
+   -------------------------------------------------------------------------- */
+.voucher-paper {
+  background: #ffffff;
+  color: #0f172a;
+  border: 2px solid #334155;
+  border-radius: 4px;
+  padding: 32px 36px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  font-family: var(--font-sans);
+}
+
+.voucher-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 12px;
+  margin-bottom: 18px;
+}
+
+.voucher-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #0f172a;
+}
+
+.voucher-meta {
+  text-align: right;
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+}
+
+.voucher-field-grid {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 12px;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+.voucher-field-grid .lbl {
+  font-weight: 700;
+  color: #475569;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  align-self: center;
+}
+
+.voucher-field-grid .val-line {
+  border-bottom: 1px dotted #64748b;
+  padding: 4px 6px;
+  font-weight: 600;
+  color: #0f172a;
+}

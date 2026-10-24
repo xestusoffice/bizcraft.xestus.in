@@ -1,0 +1,22 @@
+{
+  "name": "bizcraft-xestus",
+  "version": "1.0.0",
+  "description": "Xestus BizCraft - 100% Private, Client-Side Business Utilities & Document Studio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y serve . -l 3000",
+    "start": "npx -y serve . -l 3000"
+  },
+  "keywords": [
+    "invoice-generator",
+    "gst-calculator",
+    "upi-qr-generator",
+    "rent-receipt-hra",
+    "salary-slip",
+    "payment-voucher",
+    "privacy-first",
+    "client-side"
+  ],
+  "author": "Xestus",
+  "license": "MIT"
+}
