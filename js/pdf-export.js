@@ -10,9 +10,11 @@ export function triggerPrint() {
     document.body.classList.add('print-standee-mode');
   }
 
-  if (window.confetti) {
-    window.confetti({ particleCount: 35, spread: 1.2 });
+  // Clean up any lingering overlay canvases before triggering print
+  if (typeof window.clearConfetti === 'function') {
+    window.clearConfetti();
   }
+  document.querySelectorAll('.confetti-canvas, canvas[style*="z-index: 999999"]').forEach(c => c.remove());
 
   // Short delay allows any pending render/layout pass to settle
   setTimeout(() => {

@@ -268,7 +268,6 @@ function bindEditorEvents() {
       calculateAndRenderPreview();
       Storage.saveDraft('INVOICE_DRAFT', invoiceState);
       if (window.showToast) window.showToast('Loaded verified demo enterprise invoice!', 'success');
-      if (window.confetti) window.confetti({ particleCount: 40 });
     };
   }
 

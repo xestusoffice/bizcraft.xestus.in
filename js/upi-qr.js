@@ -106,7 +106,6 @@ function bindUPIEvents() {
       const link = buildUPIURL();
       navigator.clipboard.writeText(link).then(() => {
         if (window.showToast) window.showToast('UPI Payment Link copied to clipboard!', 'success');
-        if (window.confetti) window.confetti({ particleCount: 30 });
       });
     };
   }
@@ -218,5 +217,4 @@ function downloadUPIPNG() {
   document.body.removeChild(a);
 
   if (window.showToast) window.showToast('High-Resolution QR Code downloaded (1024x1024)!', 'success');
-  if (window.confetti) window.confetti({ particleCount: 40 });
 }

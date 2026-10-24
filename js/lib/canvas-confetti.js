@@ -55,10 +55,23 @@
     ctx.restore();
   };
 
+  function clearConfetti() {
+    while (activeCanvases.length > 0) {
+      var item = activeCanvases.pop();
+      if (item.animId) cancelAnimationFrame(item.animId);
+      if (item.canvas && item.canvas.parentNode) {
+        item.canvas.parentNode.removeChild(item.canvas);
+      }
+    }
+  }
+
   function fireConfetti(options) {
+    if (window.matchMedia && window.matchMedia('print').matches) return;
     options = options || {};
     var count = options.particleCount || 65;
     var canvas = document.createElement('canvas');
+    canvas.className = 'confetti-canvas no-print';
+    canvas.setAttribute('aria-hidden', 'true');
     canvas.style.position = 'fixed';
     canvas.style.top = '0';
     canvas.style.left = '0';
@@ -80,7 +93,9 @@
       particles.push(new ConfettiParticle(originX, originY, options));
     }
 
-    var animId;
+    var canvasItem = { canvas: canvas, animId: null };
+    activeCanvases.push(canvasItem);
+
     function animate() {
       ctx.clearRect(0, 0, width, height);
       var alive = false;
@@ -94,9 +109,11 @@
       }
 
       if (alive) {
-        animId = requestAnimationFrame(animate);
+        canvasItem.animId = requestAnimationFrame(animate);
       } else {
-        cancelAnimationFrame(animId);
+        cancelAnimationFrame(canvasItem.animId);
+        var idx = activeCanvases.indexOf(canvasItem);
+        if (idx !== -1) activeCanvases.splice(idx, 1);
         if (canvas.parentNode) {
           canvas.parentNode.removeChild(canvas);
         }
@@ -105,5 +122,7 @@
     animate();
   }
 
+  window.addEventListener('beforeprint', clearConfetti);
+  window.clearConfetti = clearConfetti;
   window.confetti = fireConfetti;
 })(typeof window !== 'undefined' ? window : this);

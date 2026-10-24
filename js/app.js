@@ -396,7 +396,6 @@ function initVaultModule() {
         data: inv
       };
       Storage.saveVaultRecord(record);
-      if (window.confetti) window.confetti({ particleCount: 30 });
       window.showToast('Invoice saved securely to your Vault!', 'success');
       updatePrivacyStatus();
     });

@@ -39,9 +39,14 @@
   .modal-overlay,
   .btn,
   .btn-icon,
+  .confetti-canvas,
+  canvas.confetti-canvas,
+  canvas[style*="z-index: 999999"],
+  canvas[style*="100vw"],
   .no-print {
     display: none !important;
     visibility: hidden !important;
+    opacity: 0 !important;
   }
 
   /* Only display the active tab pane during print */
