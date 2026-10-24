@@ -104,7 +104,7 @@ const ROUTE_CONFIG = {
     title: 'Free GST Invoice Generator Online • Tax Invoices & Quotations | Xestus BizCraft',
     description: 'Generate 100% compliant GST tax invoices, proforma bills, and quotations with automated CGST, SGST, IGST calculations, live UPI QR codes, and instant A4 PDF download.',
     keywords: 'gst invoice generator, online invoice maker india, free gst bill format, intra-state cgst sgst calculator, quotation estimate generator, private client side invoice, pdf invoice download',
-    canonical: 'https://biz.xestus.in/gst-invoice-generator.html'
+    canonical: 'https://bizcraft.xestus.in/gst-invoice-generator.html'
   },
   upi: {
     hash: 'upi-qr-generator',
@@ -112,7 +112,7 @@ const ROUTE_CONFIG = {
     title: 'Dynamic UPI QR Code Generator with Logo & Amount • NPCI Compliant | Xestus BizCraft',
     description: 'Create dynamic UPI QR codes with custom amount, payee name, transaction notes, and color themes. Download high-resolution PNG (1024x1024) or print tabletop counter standees for GPay, PhonePe, and Paytm.',
     keywords: 'upi qr code generator, dynamic upi qr with amount, printable upi counter standee, npci upi qr generator, gpay phonepe qr code, download upi qr png, merchant payment qr',
-    canonical: 'https://biz.xestus.in/upi-qr-generator.html'
+    canonical: 'https://bizcraft.xestus.in/upi-qr-generator.html'
   },
   rent: {
     hash: 'rent-receipt-generator',
@@ -120,7 +120,7 @@ const ROUTE_CONFIG = {
     title: 'HRA Rent Receipt Generator Online • Free 12-Month Batch PDF | Xestus BizCraft',
     description: 'Generate legally compliant HRA rent receipts for income tax exemption under Section 10(13A). Supports single month and 12-month batch financial year receipts with revenue stamps and Landlord PAN.',
     keywords: 'hra rent receipt generator, rent receipt for income tax exemption, section 10 13a rent receipt, 12 month rent receipt pdf, landlord pan rent receipt, rent receipt online download, free rent receipt maker',
-    canonical: 'https://biz.xestus.in/rent-receipt-generator.html'
+    canonical: 'https://bizcraft.xestus.in/rent-receipt-generator.html'
   },
   salary: {
     hash: 'salary-slip-generator',
@@ -128,7 +128,7 @@ const ROUTE_CONFIG = {
     title: 'Free Salary Slip Generator Online • Employee Payslip & Payment Voucher Maker | Xestus BizCraft',
     description: 'Create corporate salary payslips and payment vouchers with automated Basic, HRA, PF, Professional Tax, TDS deductions, and Net Pay in words. Instant PDF download.',
     keywords: 'salary slip generator, payslip maker online, free salary slip excel pdf, employee pay slip generator, payment voucher maker, hra basic pf calculator, hr payslip template',
-    canonical: 'https://biz.xestus.in/salary-slip-generator.html'
+    canonical: 'https://bizcraft.xestus.in/salary-slip-generator.html'
   },
   vault: {
     hash: 'vault',
@@ -136,7 +136,7 @@ const ROUTE_CONFIG = {
     title: 'Offline Encrypted Vault • Private Client-Side Business Data Storage | Xestus BizCraft',
     description: 'Secure, zero-cloud encrypted client-side storage vault. Manage saved invoices, rent receipts, and salary slips with zero telemetry. Export and import JSON backups.',
     keywords: 'private invoice vault, client side business data storage, offline accounting records, zero cloud business vault, encrypted local storage',
-    canonical: 'https://biz.xestus.in/vault.html'
+    canonical: 'https://bizcraft.xestus.in/vault.html'
   }
 };
 
@@ -298,7 +298,7 @@ function setupLegalModals() {
     privacy: {
       title: 'Privacy Policy & Zero-Data Telemetry Guarantee',
       content: `
-        <p><strong>Effective Date:</strong> October 2026 | <strong>Website:</strong> https://biz.xestus.in/</p>
+        <p><strong>Effective Date:</strong> October 2026 | <strong>Website:</strong> https://bizcraft.xestus.in/</p>
         <br/>
         <h4>1. 100% In-Browser Client-Side Processing</h4>
         <p>Xestus BizCraft is engineered under a strict Zero-Cloud, Privacy-First architecture. When you enter customer names, GST numbers, PAN details, bank accounts, or financial figures, <strong>no data is transmitted to our servers or any third-party clouds</strong>. All calculations, QR generation, PDF formatting, and preview renderings happen strictly inside your browser's local sandbox memory.</p>
@@ -319,7 +319,7 @@ function setupLegalModals() {
         <p><strong>Last Updated:</strong> October 2026</p>
         <br/>
         <h4>1. Acceptance of Terms</h4>
-        <p>By accessing or utilizing Xestus BizCraft (https://biz.xestus.in/), you agree to abide by these Terms of Service. If you disagree with any portion of these terms, you should discontinue use of the utility suite.</p>
+        <p>By accessing or utilizing Xestus BizCraft (https://bizcraft.xestus.in/), you agree to abide by these Terms of Service. If you disagree with any portion of these terms, you should discontinue use of the utility suite.</p>
         <br/>
         <h4>2. Permitted Use & Commercial License</h4>
         <p>Xestus BizCraft is provided as a client-side productivity tool. You are permitted to generate invoices, payment QR codes, rent receipts, and salary payslips for your legitimate personal, freelance, and corporate business operations without paying licensing royalties.</p>
@@ -353,7 +353,7 @@ function setupLegalModals() {
         <h4>Contact & Inquiries</h4>
         <p>For corporate partnerships, bug reports, or feature requests, contact us at:</p>
         <p><strong>Email:</strong> <a href="mailto:contact@xestus.in">contact@xestus.in</a></p>
-        <p><strong>Official Website:</strong> <a href="https://biz.xestus.in/" target="_blank" rel="noopener noreferrer">https://biz.xestus.in/</a></p>
+        <p><strong>Official Website:</strong> <a href="https://bizcraft.xestus.in/" target="_blank" rel="noopener noreferrer">https://bizcraft.xestus.in/</a></p>
       `
     }
   };

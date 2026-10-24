@@ -773,7 +773,7 @@ function exportItemsCSV() {
 function shareOnWhatsApp() {
   const inv = invoiceState;
   const total = calculateTotalAmount(inv);
-  const text = `*Invoice: ${inv.invoiceNo}*\nFrom: ${inv.seller.name}\nBilled To: ${inv.client.name}\nTotal Amount: ₹${formatCurrencyNumber(total, 'INR')}\nDue Date: ${inv.dueDate}\nPay via UPI: ${inv.bank.upiId || 'Contact for details'}\n\nGenerated with Xestus BizCraft: https://biz.xestus.in/`;
+  const text = `*Invoice: ${inv.invoiceNo}*\nFrom: ${inv.seller.name}\nBilled To: ${inv.client.name}\nTotal Amount: ₹${formatCurrencyNumber(total, 'INR')}\nDue Date: ${inv.dueDate}\nPay via UPI: ${inv.bank.upiId || 'Contact for details'}\n\nGenerated with Xestus BizCraft: https://bizcraft.xestus.in/`;
 
   const url = `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`;
   window.open(url, '_blank');

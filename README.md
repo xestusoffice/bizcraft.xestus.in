@@ -4,7 +4,7 @@
 > Zero Cloud Database • Zero Telemetry Tracking • Instant Offline PWA
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Web%20%7C%20PWA-indigo.svg)](https://biz.xestus.in)
+[![Platform](https://img.shields.io/badge/Platform-Web%20%7C%20PWA-indigo.svg)](https://bizcraft.xestus.in)
 [![Privacy First](https://img.shields.io/badge/Privacy-100%25%20In--Browser-emerald.svg)](#privacy-guarantee)
 
 Xestus BizCraft is an ultra-luxurious, zero-backend business document engine tailored for Indian small businesses, freelancers, landlords, and founders. Everything is processed directly in your browser.

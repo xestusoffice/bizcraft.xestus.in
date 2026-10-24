@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://biz.xestus.in/sitemap.xml
+Sitemap: https://bizcraft.xestus.in/sitemap.xml

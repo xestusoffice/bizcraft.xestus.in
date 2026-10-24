@@ -3,43 +3,43 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://biz.xestus.in/</loc>
+    <loc>https://bizcraft.xestus.in/</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://biz.xestus.in/gst-invoice-generator</loc>
+    <loc>https://bizcraft.xestus.in/gst-invoice-generator</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://biz.xestus.in/upi-qr-generator</loc>
+    <loc>https://bizcraft.xestus.in/upi-qr-generator</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
   </url>
   <url>
-    <loc>https://biz.xestus.in/rent-receipt-generator</loc>
+    <loc>https://bizcraft.xestus.in/rent-receipt-generator</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://biz.xestus.in/salary-slip-generator</loc>
+    <loc>https://bizcraft.xestus.in/salary-slip-generator</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
   <url>
-    <loc>https://biz.xestus.in/payment-voucher</loc>
+    <loc>https://bizcraft.xestus.in/payment-voucher</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://biz.xestus.in/vault</loc>
+    <loc>https://bizcraft.xestus.in/vault</loc>
     <lastmod>2026-10-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
